@@ -1,0 +1,142 @@
+.FooterContainer {
+    padding: 20px 0;
+    background-color: #161616;
+    color: white;
+    margin-top: 8px;
+}
+
+.FooterLogoContainer img {
+    max-width: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.BoldFooterText {
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.FooterSmallText {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.FooterSmallText:hover {
+    color: white;
+}
+
+.SocialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.FooterSocials {
+    margin-bottom: 8px;
+}
+
+.FooterSocials a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(207, 207, 207);
+}
+
+.FooterSocials a:hover {
+    color: white;
+}
+
+.FooterContainer a {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+}
+@media (max-width: 1198px) {
+    .SocialLinks {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .FooterContainer {
+        text-align: center;
+    }
+
+    .FooterLogoContainer {
+        margin-bottom: 20px;
+    }
+
+    .FooterLogoContainer img {
+        max-width: 40px;
+        margin-top: 10px;
+    }
+
+    .BoldFooterText {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    .SocialLinks {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .FooterSocials {
+        margin-bottom: 5px;
+    }
+
+    .FooterSocials a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .FooterContainer {
+        padding: 15px 0;
+    }
+
+    .FooterLogoContainer img {
+        max-width: 35px;
+        margin-top: 5px;
+    }
+
+    .BoldFooterText {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .SocialLinks {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .FooterSocials {
+        margin-bottom: 5px;
+    }
+
+    .FooterSocials a {
+        font-size: 11px;
+    }
+}

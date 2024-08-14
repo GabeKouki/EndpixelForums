@@ -1,0 +1,9 @@
+.RulesHomepageContainer {
+    display: flex;
+    flex-direction: row ;
+}
+
+.RulesHomepageContent {
+    display: flex;
+    flex-direction: column;
+}

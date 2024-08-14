@@ -1,0 +1,62 @@
+.NavbarContainer {
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgb(91, 19, 81); 
+    transition: all 0.3s ease; 
+    justify-content: space-evenly;
+}
+
+.NavbarContainer.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0; 
+    background-color: rgba(91, 19, 81, 0.7); 
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+.NavbarContainer nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavbarContainer nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+.SmallLogo {
+    height: 70px;
+    margin-right: 40px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.NavButtonContainer {
+    display: flex;
+    justify-content: right;
+    /* gap: 10px; */
+}
+
+.NavButton {
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: black;
+    border: 1px solid grey;
+}
+
+.NavButton:hover {
+    border: 1px solid grey;
+    background-color: grey;
+}
+
+.NavTitle {
+    text-align: center;
+    color: white;
+}
+
+.NavTitle h2 {
+    margin-top: 10px;
+}
