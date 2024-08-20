@@ -1,9 +1,53 @@
-.RulesHomepageContainer {
-    display: flex;
-    flex-direction: row ;
+.RulesContainer {
+    width: 100%;
+    min-height: 64vh;
 }
 
-.RulesHomepageContent {
+.RulesSideMenu {
+    background-color: #101010;
+    border-radius: 10px;
+    margin-left: 255px;
+    width: 320px;
+    max-height: 363px;
+}
+
+.RulesHolder {
+    width: 1020px;
+    margin-left: 50px;
+    margin-right: 255px;
+    background-color: #101010;
+    border-radius: 10px;
+}
+
+.SidebarMenuName {
+    color: #ff55ff;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.IconRow:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.SidebarNavigationTabs {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+.SidebarNavigationTabs.Active {
+    color: #ff55ff
+}
+
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IconActive {
+    color: #ff55ff;
+    border-bottom: 3px solid #ff55ff;
+    padding-bottom: 5px;
 }

@@ -2,10 +2,11 @@ import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import About from "./Components/Misc/About";
 import Homepage from "./Pages/Homepage";
 import Navbar from "./Components/Navbar";
 import Rules from "./Pages/Rules";
-import About from "./Components/Misc/About";
+import Team from "./Components/Misc/Team";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* <Route path="/wiki" element={<Wiki />} /> */}
         <Route path="/about" element={<About />} />
         {/* <Route path="/prisonsrules" element={} /> */}
+        <Route path="/teams" element={<Team />} />
       </Routes>
     </BrowserRouter>
   );

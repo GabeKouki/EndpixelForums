@@ -1,0 +1,57 @@
+.ChatRulesContainer p {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    margin-bottom: 16px;
+    text-align: left; 
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.ChatRulesText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px; 
+    color: #f0f0f0; 
+}
+
+.ChatRulesHeadline h1 {
+    color: #f0f0f0; 
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.ChatRulesHeadline {
+    background-color: #252525;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.ParagraphText {
+    background-color: #252525;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.ParagraphText p {
+    margin-left: 30px; 
+}
+
+.ParagraphText h2 {
+    color: white; 
+    margin-bottom: 10px;
+}
+
+

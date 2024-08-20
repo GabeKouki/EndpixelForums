@@ -1,0 +1,12 @@
+.SignInNavButton {
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: rgb(224, 58, 127);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.SignInNavButton:hover {
+    border: 1px solid grey;
+    background-color: grey;
+}

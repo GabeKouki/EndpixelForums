@@ -70,9 +70,6 @@ p {
 
 
 @media (max-width: 768px) {
-    .FooterContainer {
-        text-align: center;
-    }
 
     .FooterLogoContainer {
         margin-bottom: 20px;

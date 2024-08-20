@@ -1,21 +1,87 @@
 import React, { useState } from "react";
-import './RulesHomepage.css';
-import RulesSidebar from "./RulesSidebar";
-
-
+import "./RulesHomepage.css";
+import { Row, Col } from "react-bootstrap";
+import HomeRules from "./HomeRules";
+import ChatRules from "./ChatRules";
+import GameplayRules from "./GameplayRules";
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { faFortAwesome } from "@fortawesome/free-brands-svg-icons";
+import { faShield } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function RulesHomepage() {
 
-    return (
-        <>
-        <div className="RulesHomepageContainer">
-    <RulesSidebar />
-    <div className="RulesHomepageContent">
-<h1>Hi</h1>
-<p>Welcome to the Rules Homepage. The sidebar is on the left, and the corresponding rules is on the right</p>
-</div>
-</div>
-        </>
-    );
+    const [isActive, setIsActive] = useState("Home")
+
+    const updateTab = (placeholder) => {
+        setIsActive(placeholder)
+    }
+
+
+
+
+  return (
+    <>
+      <div className="RulesContainer">
+        <Row>
+          <Col className="RulesSideMenu" sm="3" lg="3">
+            <h1 className="SidebarMenuName">Rules</h1>
+            <div>
+
+        <Row className="IconRow">
+            <Col md={2} className="IconContainer">
+            <FontAwesomeIcon className={isActive === "Home" ? 'IconActive' : ""} size="2xl" icon={faHouse}/> 
+            </Col>
+            <Col md={10}>
+            <h1 className={`SidebarNavigationTabs ${isActive === "Home" ? 'Active' : ""}`} onClick={() => updateTab("Home")}>Home</h1>
+            </Col>
+            </Row>
+            <Row className="IconRow">
+            <Col md={2} className="IconContainer">
+            <FontAwesomeIcon className={isActive === "Chat" ? 'IconActive' : ""} size="2xl" icon={faComment}/> 
+            </Col>
+            <Col md={10}>
+            <h1 className={`SidebarNavigationTabs ${isActive === "Chat" ? 'Active' : ""}`} onClick={() => updateTab("Chat")}>Chat</h1>
+            </Col>
+            </Row>
+            <Row className="IconRow">
+            <Col md={2} className="IconContainer">
+            <FontAwesomeIcon className={isActive === "Gameplay" ? 'IconActive' : ""} size="2xl" icon={faGamepad}/> 
+            </Col>
+            <Col md={10}>
+            <h1 className={`SidebarNavigationTabs ${isActive === "Gameplay" ? 'Active' : ""}`} onClick={() => updateTab("Gameplay")}>Gameplay</h1>
+            </Col>
+            </Row>
+            <Row className="IconRow">
+            <Col md={2} className="IconContainer">
+
+            <FontAwesomeIcon className={isActive === "Prisons" ? 'IconActive' : ""} size="2xl" icon={faShield}/> 
+            </Col>
+            <Col md={10}>
+            <h1 className={`SidebarNavigationTabs ${isActive === "Prisons" ? 'Active' : ""}`} onClick={() => updateTab("Prisons")}>Prisons</h1>
+            </Col>
+            </Row>
+            <Row className="IconRow">
+            <Col md={2} className="IconContainer">
+
+            <FontAwesomeIcon className={isActive === "Factions" ? 'IconActive' : ""} size="2xl" icon={faFortAwesome}/>
+            </Col>
+            <Col md={10}>
+            <h1 className={`SidebarNavigationTabs ${isActive === "Factions" ? 'Active' : ""}`} onClick={() => updateTab("Factions")}>Factions</h1>
+            </Col>
+            </Row>
+            </div>
+          </Col>
+          <Col className="RulesHolder" sm="9" lg="9">
+          {isActive === "Home" && <HomeRules />}
+          {isActive === "Chat" && <ChatRules />}
+          {isActive === "Gameplay" && <GameplayRules />}
+          </Col>
+        </Row>
+      </div>
+    </>
+  );
 }
