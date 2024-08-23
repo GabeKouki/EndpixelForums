@@ -1,5 +1,3 @@
-import "./Homepage.css";
-
 import ContentSection from "../Components/Homepage/ContentSection";
 import Footer from "../Components/Footer";
 import React from "react";
