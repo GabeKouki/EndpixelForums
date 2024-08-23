@@ -1,29 +1,57 @@
 import React from "react";
-import './WikiHomepage.css';
+import "./WikiHomepage.css";
 import Footer from "../Footer";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function WikiHomepage() {
-    return (
-        <>
-            <div className="WikiContainer">
-                <div className="BoxContainer">
-                    <Row>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey
-                        walkthroughs
-                        ww
-                        </Col>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey</Col>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey</Col>
-                    </Row>
-                    <Row>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey</Col>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey</Col>
-                        <Col lg={4} md={6} sm={12} className="WikiBoxes">Hey</Col>
-                    </Row>
-                </div>
+
+  return (
+    <>
+          <div className="HomeContainer">
+            <div className="LeftContentBox">
+              <h1>Prisons</h1>
+              <p>
+                Explore the vast world of our Prisons server. From mining to
+                PvP, there's always something new to discover!
+              </p>
+              <a>
+                <Link to="/wiki/prisons" className="text-link">
+                  Go to Prisons Wiki <FontAwesomeIcon icon={faAnglesRight} />
+                </Link>
+                </a>
             </div>
-            <Footer />
-        </>
-    );
+            <div className="RightContentBox">
+              <h1>Factions</h1>
+              <p>
+                Build, raid, and conquer in our Factions server. Forge alliances
+                or wage wars as you rise to dominance.
+              </p>
+              <a>
+                <Link to="/wiki/factions" className="text-link">
+                  Go to Factions Wiki <FontAwesomeIcon icon={faAnglesRight} />
+                </Link>
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <Footer />
+    </>
+  );
 }

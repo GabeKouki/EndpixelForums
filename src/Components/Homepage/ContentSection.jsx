@@ -17,7 +17,7 @@ export default function ContentSection() {
             updates, events, and special announcements. Our community-driven wiki
             is constantly evolving, so be sure to check back often!
           </p>
-          <Link to="/Wiki" className="text-link">Go to Wiki <FontAwesomeIcon icon={faAnglesRight} /></Link>
+          <Link to="/wiki" className="text-link">Go to Wiki <FontAwesomeIcon icon={faAnglesRight} /></Link>
         </div>
         <div className="content-box">
           <h2>Rules and Guidelines</h2>

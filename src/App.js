@@ -9,6 +9,7 @@ import Rules from "./Pages/Rules";
 import Team from "./Components/Misc/Team";
 import Contributions from "./Pages/Contributions";
 import Wiki from "./Pages/Wiki";
+import WikiPrisons from "./Pages/WikiPrisons";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         {/* <Route path="/prisonsrules" element={} /> */}
         <Route path="/teams" element={<Team />} />
         <Route path="/Contributions" element={<Contributions />} />
+        <Route path="/wiki/prisons" element={<WikiPrisons />} />
       </Routes>
     </BrowserRouter>
   );
