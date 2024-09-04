@@ -91,3 +91,9 @@
   .text-link:hover {
     color: white;
   }
+
+  @media screen and (max-width:1160px) {
+    .HomeContainer {
+        flex-direction: column;
+    }
+  }

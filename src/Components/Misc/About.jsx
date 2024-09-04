@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import smallLogo from "../../Images/EPSmallLogo.png";
 import Footer from "../Footer";
 import { useState } from "react";
-import { Button } from "react-bootstrap";
 import "./About.css";
 
 export default function About() {
@@ -24,7 +22,7 @@ export default function About() {
             setTimePassed(`${days} day${days !== 1 ? "s" : ""}, ${hours} hour${hours !== 1 ? "s" : ""}, ${minutes} minute${minutes !== 1 ? "s" : ""}, and ${seconds} second${seconds !== 1 ? "s" : ""}`);
         };
 
-        const intervalId = setInterval(updateTimer, 1000);
+        const intervalId = setInterval(updateTimer);
 
         return () => clearInterval(intervalId);
     }, []);
@@ -33,33 +31,18 @@ export default function About() {
   return (
     <>
       <div className="AboutPageContainer">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <img alt="/" className="AboutPageSmallLogo" src={smallLogo} />
-        <br />
         <h1>Minecraft with a touch of</h1>
-        <h2>Creativity</h2>
-        <br />
+        <h2 className="Creativity">Creativity</h2>
         <p>Creating well-rounded gameplay through experiences and commuinity outreach</p>
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="AboutInfoContainer">
           <div className="AboutInfo">
-            <h1>{timePassed}</h1>
+            <h2>{timePassed}</h2>
             <p>Since Endpixel was born</p>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <Button><a href="https://store.endpixel.gg/" target="_blank">View Products</a></Button>
-        <br />
+        <div className="AboutButtonContainer">
+        <a href="https://store.endpixel.gg/" target="_blank" rel="noreferrer"><button>Products</button></a>
+        </div>
       </div>
       <Footer />
     </>

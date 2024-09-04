@@ -43,8 +43,11 @@
 .SidebarItem {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
     flex-direction: column;
+    cursor: pointer;
+    padding: 0;
 }
 
 .SidebarIcon {
@@ -57,9 +60,17 @@
     font-size: 18px;
     margin: 0;
     color: white;
-    text-align: left;
+    text-align: center;
+
 }
 
 .Arrow {
     margin: 20px;
+}
+
+.SidebarCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

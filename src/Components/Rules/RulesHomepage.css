@@ -37,7 +37,8 @@
     align-items: center;
 }
 .SidebarNavigationTabs.Active {
-    color: #ff55ff
+    color: #ff55ff;
+    transition: color 0.3s ease-in ;
 }
 
 .IconContainer {
@@ -50,4 +51,5 @@
     color: #ff55ff;
     border-bottom: 3px solid #ff55ff;
     padding-bottom: 5px;
+    transition: color 0.3s ease-in ;
 }
