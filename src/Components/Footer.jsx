@@ -18,7 +18,7 @@ export default function Footer() {
             </Col>
             <Col>
               <h2 className="BoldFooterText">Endpixel</h2>
-              <p className="FooterSmallText">Questions</p>
+              <Link className="FooterSmallText" to="/FAQ"><p>Questions</p></Link>
               <p className="FooterSmallText">Help</p>
               <p className="FooterSmallText">Chat</p>
             </Col>
