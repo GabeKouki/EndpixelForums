@@ -1,0 +1,9 @@
+.PrisonsWikiContainer {
+    height: auto;
+    width: 100%;
+}
+
+.SidebarContainer {
+    display: flex;
+    flex-direction: column;
+}

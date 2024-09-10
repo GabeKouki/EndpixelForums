@@ -23,7 +23,7 @@ export default function Footer() {
               <p className="FooterSmallText">Chat</p>
             </Col>
             <Col>
-              <a href="https://store.endpixel.gg/" target="_blank"><h2 className="BoldFooterText">Products</h2></a>
+              <a href="https://store.endpixel.gg/" target="_blank"  rel="noreferrer" ><h2 className="BoldFooterText">Products</h2></a>
               <p className="FooterSmallText">Teams</p>
               <p className="FooterSmallText">Advertising</p>
               <p className="FooterSmallText">Talent</p>
@@ -39,11 +39,11 @@ export default function Footer() {
             <p className="FooterSmallText">Cookie Policy</p>
             </Col>
             <Col className="SocialLinks">
-                <div className="FooterSocials"><a href="https://x.com/endpixelmc?s=21" target="_blank">Twitter</a></div> 
-                <div className="FooterSocials"><a href="https://discord.gg/endpixel" target="_blank">Discord</a></div> 
-                <div className="FooterSocials"><a href="https://www.youtube.com/@EndPixelPrisons" target="_blank">Youtube</a></div>      
-                <div className="FooterSocials"><a href="https://www.tiktok.com/@endpixelprisons" target="_blank">TikTok</a></div>
-                <div className="FooterSocials"><a href="https://www.instagram.com/endpixelnetwork?igsh=NGVhN2U2NjQ0Yg==" target="_blank">Instagram</a></div>          
+                <div className="FooterSocials"><a href="https://x.com/endpixelmc?s=21" target="_blank" rel="noreferrer">Twitter</a></div> 
+                <div className="FooterSocials"><a href="https://discord.gg/endpixel" target="_blank" rel="noreferrer">Discord</a></div> 
+                <div className="FooterSocials"><a href="https://www.youtube.com/@EndPixelPrisons" target="_blank" rel="noreferrer">Youtube</a></div>      
+                <div className="FooterSocials"><a href="https://www.tiktok.com/@endpixelprisons" target="_blank" rel="noreferrer">TikTok</a></div>
+                <div className="FooterSocials"><a href="https://www.instagram.com/endpixelnetwork?igsh=NGVhN2U2NjQ0Yg==" target="_blank" rel="noreferrer">Instagram</a></div>          
             </Col>
           </Row>
         </Container>

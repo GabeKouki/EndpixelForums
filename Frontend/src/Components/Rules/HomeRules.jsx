@@ -30,7 +30,7 @@ export default function HomeRules() {
             Discord server.
           </p>
           <div className="ButtonContainer">
-          <a href="https://discordapp.com/channels/1222638701721555035/1268733801564082238" target="_blank"><button>Take me to discord</button></a>
+<a href="https://discordapp.com/channels/1222638701721555035/1268733801564082238" target="_blank" rel="noreferrer"><button type="button">Take me to discord</button></a>
           </div>
         </div>
 
