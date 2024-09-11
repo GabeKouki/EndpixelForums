@@ -42,15 +42,15 @@ export default function WikiPrisons() {
               <FaChartLine size="lg" />
               <h1 className={`${isActive ? 'Active' : ''}`}>Progression</h1>
               {path !== 'Progression' && (
-              <FaAngleDown size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
+                <FaAngleDown size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
               )}
               {path === "Progression" && (
-                <FaAngleUp size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`}/>
+                <FaAngleUp size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
               )}
             </div>
             {isActive && (
               <div className={`WikiSubItem ${path === 'Progression' ? 'Active' : ''}`}>
-                <h1 className='WikiSubItemText'>Levels</h1>
+                <h1 className='WikiSubItemText' onClick={() => console.log("test")}>Levels</h1>
                 <h1 className='WikiSubItemText'>Experience</h1>
                 <h1 className='WikiSubItemText'>Skills</h1>
                 <h1 className='WikiSubItemText'>Stats</h1>
@@ -59,8 +59,21 @@ export default function WikiPrisons() {
             <div className="WikiSidebarItem" onClick={() => updatePath('Events')}>
               <FaBullhorn size="lg" />
               <h1 className={`${isActive ? 'Active' : ''}`}>Events</h1>
-              <FaAngleDown size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
+              {path !== 'Events' && (
+                <FaAngleDown size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
+              )}
+              {path === "Events" && (
+                <FaAngleUp size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
+              )}
             </div>
+            {isActive && (
+                <div className={`WikiSubItem ${path === 'Events' ? 'Active' : ''}`}>
+                  <h1 className='WikiSubItemText'>Levels</h1>
+                  <h1 className='WikiSubItemText'>Experience</h1>
+                  <h1 className='WikiSubItemText'>Skills</h1>
+                  <h1 className='WikiSubItemText'>Stats</h1>
+                </div>
+              )}
             <div className="WikiSidebarItem" onClick={() => updatePath('PvP')}>
               <FaShieldAlt size="lg" />
               <h1 className={`${isActive ? 'Active' : ''}`}>PvP</h1>

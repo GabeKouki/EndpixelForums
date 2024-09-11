@@ -104,3 +104,20 @@
     margin: 0;
 }
 
+
+
+
+
+/* Content Styles */
+
+.ContentContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;  */
+    border: 3px solid blue;
+    width: 100%;
+    text-decoration: underline;
+    height: 1000vh;
+}
