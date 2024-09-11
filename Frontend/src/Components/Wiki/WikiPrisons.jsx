@@ -29,7 +29,6 @@ export default function WikiPrisons() {
       console.log(newPath)
     }
   }
-  WikiArrow
   return (
     <>
       <div className="PrisonsWikiContainer">
