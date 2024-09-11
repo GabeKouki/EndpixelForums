@@ -2,6 +2,14 @@ import React from "react";
 import "./GameplayRules.css";
 
 export default function GameplayRules() {
+  const scrolltoTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  
   return (
     <>
       <div className="GameplayRulesContainer">
@@ -156,6 +164,11 @@ export default function GameplayRules() {
           <p>a. /sell all</p>
           <p>b. /extract all</p>
           <p>c. /g ping</p>
+          <div className="GameplayButtonContainer">
+            <button type="button" onClick={() => scrolltoTop()}>
+              Back to Top
+            </button>
+          </div>
         </div>
       </div>
     </>

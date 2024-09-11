@@ -19,8 +19,9 @@
           "level": "off"
         }
       },
-      "a11y" : {
-        "useButtonType": "off"
+      "a11y": {
+        "useButtonType": "off",
+        "useKeyWithClickEvents": "off"
       },
       "suspicious": {
         "noExplicitAny": {

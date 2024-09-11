@@ -55,3 +55,24 @@
 }
 
 
+.ChatButtonContainer button {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .ChatButtonContainer button{
+        display: flex;
+        background-color: #ff55ff; 
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in;
+    }
+    
+    .ChatButtonContainer button:hover {
+        background-color: #aa00aa; 
+    }
+}

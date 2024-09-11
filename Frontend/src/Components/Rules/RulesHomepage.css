@@ -1,5 +1,5 @@
 .RulesContainer {
-    width: 100%;
+    width: auto;
     min-height: 64vh;
     display: flex;
     flex-direction: row;
@@ -15,6 +15,8 @@
     border-radius: 10px;
     width: 350px;
     max-height: 370px;
+    min-height: 275px;
+    min-width: 285px;
 }
 
 .RulesHolder {
@@ -64,4 +66,20 @@
     border-bottom: 3px solid #ff55ff;
     padding-bottom: 5px;
     transition: color 0.3s ease-in ;
+}
+
+@media screen and (max-width: 1025px) {
+    .RulesContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .RulesHolder {
+        width: 90vw;
+    }
+
+    .IconRow {
+        margin-bottom: 3px;
+    }
 }

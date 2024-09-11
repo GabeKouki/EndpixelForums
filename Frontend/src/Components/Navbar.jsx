@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return (
     <>
-      {isSticky && <div className="NavbarSpacer"></div>}
+      {isSticky && <div className="NavbarSpacer" />}
       <div className={`NavbarContainer ${isSticky ? "sticky" : ""}`}>
         <Row className="NavRow">
           <Col xs={4} sm={4}>
@@ -108,7 +108,9 @@ export default function Navbar() {
         <LogoutButton />
       </div>
 
-      {isMenuOpen && <div className="Overlay" onClick={toggleMenu}></div>}
+      {isMenuOpen && <div className="Overlay" onClick={toggleMenu}>
+        
+        </div>}
     </>
   );
 }
