@@ -11,6 +11,7 @@ import {
   FaServer,
   FaBars,
   FaAngleDown,
+  FaAngleUp,
 } from 'react-icons/fa'
 
 export default function WikiPrisons() {
@@ -40,14 +41,19 @@ export default function WikiPrisons() {
             <div className="WikiSidebarItem" onClick={() => updatePath('Progression')}>
               <FaChartLine size="lg" />
               <h1 className={`${isActive ? 'Active' : ''}`}>Progression</h1>
-              <FaAngleDown size="lg" className={`WikiArrow ${path ? 'Active' : ''}`} />
+              {path !== 'Progression' && (
+              <FaAngleDown size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`} />
+              )}
+              {path === "Progression" && (
+                <FaAngleUp size="lg" className={`WikiArrow ${isActive ? 'Active' : ''}`}/>
+              )}
             </div>
             {isActive && (
               <div className={`WikiSubItem ${path === 'Progression' ? 'Active' : ''}`}>
-                <h1>Levels</h1>
-                <h1>Experience</h1>
-                <h1>Skills</h1>
-                <h1>Stats</h1>
+                <h1 className='WikiSubItemText'>Levels</h1>
+                <h1 className='WikiSubItemText'>Experience</h1>
+                <h1 className='WikiSubItemText'>Skills</h1>
+                <h1 className='WikiSubItemText'>Stats</h1>
               </div>
             )}
             <div className="WikiSidebarItem" onClick={() => updatePath('Events')}>
