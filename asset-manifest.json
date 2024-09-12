@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.cef1517e.css",
-    "main.js": "/static/js/main.1c4bd796.js",
-    "static/media/FactionsSpawn.png": "/static/media/FactionsSpawn.4ae98db5f2c0b7cbd6d4.png",
-    "static/media/PrisonsSpawn.png": "/static/media/PrisonsSpawn.b5cc86d99aaf2b6d10eb.png",
-    "static/media/EndpixelLarge.png": "/static/media/EndpixelLarge.fc5d464b43eb8d6bb8d9.png",
-    "static/media/EPSmallLogo.png": "/static/media/EPSmallLogo.29acd7f478f61b9ad63f.png",
-    "index.html": "/index.html",
-    "main.cef1517e.css.map": "/static/css/main.cef1517e.css.map",
-    "main.1c4bd796.js.map": "/static/js/main.1c4bd796.js.map"
+    "main.css": "/EndpixelForums/static/css/main.f9139787.css",
+    "main.js": "/EndpixelForums/static/js/main.b4dc57d2.js",
+    "static/media/FactionsSpawn.png": "/EndpixelForums/static/media/FactionsSpawn.4ae98db5f2c0b7cbd6d4.png",
+    "static/media/PrisonsSpawn.png": "/EndpixelForums/static/media/PrisonsSpawn.b5cc86d99aaf2b6d10eb.png",
+    "static/media/EndpixelLarge.png": "/EndpixelForums/static/media/EndpixelLarge.fc5d464b43eb8d6bb8d9.png",
+    "static/media/EPSmallLogo.png": "/EndpixelForums/static/media/EPSmallLogo.29acd7f478f61b9ad63f.png",
+    "index.html": "/EndpixelForums/index.html",
+    "main.f9139787.css.map": "/EndpixelForums/static/css/main.f9139787.css.map",
+    "main.b4dc57d2.js.map": "/EndpixelForums/static/js/main.b4dc57d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cef1517e.css",
-    "static/js/main.1c4bd796.js"
+    "static/css/main.f9139787.css",
+    "static/js/main.b4dc57d2.js"
   ]
 }
