@@ -1,5 +1,4 @@
 .PrisonsWikiContainer {
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -8,10 +7,14 @@
 .SidebarContainer {
     display: flex;
     flex-direction: column;
-    width: 60px;
-    border: 3px solid red;
-    height: 100vh;
-    align-items: left;
+    width: 50px;
+    background-color: #1D1D1D;
+    box-shadow: 0px 0px 10px #1D1D1D;
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 100;
 }
 
 .WikiHamburger {
@@ -83,11 +86,11 @@
 
 .WikiSubItem.Active {
     display: block;
-    background: #1D1D1D;
+    background: pink;
 }
 
 .WikiSubItemText:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .WikiSubItemText {
@@ -100,8 +103,9 @@
 
 .WikiSubItem h1 {
     font-size: 18px;
-    color: white;
+    color: black;
     margin: 0;
+    padding-left: 10px;
 }
 
 
@@ -115,9 +119,64 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center;  */
-    border: 3px solid blue;
     width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, #1d1027d9, #1D1D1D);
+}
+
+.PrisonsWikiIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.PrisonsWikiIntro h1 {
+    font-size: 3rem;
+    margin-top: 80px;    
+}
+
+.PrisonsWikiIntro p {
+    font-size: 1rem;
+}
+
+.PrisonsWikiContent {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 290px;
+    margin-right: 290px;
+}
+
+.PrisonsWikiContent h1 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    margin: 0;
     text-decoration: underline;
-    height: 1000vh;
+    font-weight: bold; 
+}
+
+.PrisonsWikiContent p {
+    max-width: 80%;
+    margin-top: 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.PrisonsWikiContent h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+}
+
+.PrisonsWikiContent h3 {
+    font-size: 1.2rem;
 }
